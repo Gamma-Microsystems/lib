@@ -3,11 +3,11 @@
  *
  * Shows a button that presents a menu with the option to log out.
  */
-#include <toaru/yutani.h>
-#include <toaru/graphics.h>
-#include <toaru/menu.h>
-#include <toaru/text.h>
-#include <toaru/panel.h>
+#include <sirius/yutani-ng.h>
+#include <sirius/graphics.h>
+#include <sirius/menu.h>
+#include <sirius/text.h>
+#include <sirius/panel.h>
 static struct MenuList * logout_menu;
 static sprite_t * sprite_logout;
 
@@ -41,4 +41,3 @@ struct PanelWidget * widget_init_logout(void) {
 
 	return widget;
 }
-

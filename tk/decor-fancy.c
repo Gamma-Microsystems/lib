@@ -5,17 +5,18 @@
  * This is based on an old GTK theme I used to use back in ~2010.
  *
  * @copyright
- * This file is part of ToaruOS and is released under the terms
+ * This file is part of SiriusOS and is released under the terms
  * of the NCSA / University of Illinois License - see LICENSE.md
  * Copyright (C) 2016-2021 K. Lange
+ * Copyright (C) 2024 Gamma Microsystems
  */
 #include <stdint.h>
 #include <dlfcn.h>
 
-#include <toaru/yutani.h>
-#include <toaru/graphics.h>
-#include <toaru/decorations.h>
-#include <toaru/text.h>
+#include <sirius/yutani-ng.h>
+#include <sirius/graphics.h>
+#include <sirius/decorations.h>
+#include <sirius/text.h>
 
 #define TTK_FANCY_PATH "/usr/share/ttk/fancy/"
 
@@ -55,7 +56,7 @@ static sprite_t * sprites[22];
 
 /**
  * Replaces an old graphics API function from the
- * very early days of ToaruOS...
+ * very early days of siriusOS...
  */
 static void init_sprite(int id, char * path) {
 	sprites[id] = malloc(sizeof(sprite_t));
@@ -304,4 +305,3 @@ void decor_init() {
 
 	_tt_font = tt_font_from_shm("sans-serif.bold");
 }
-

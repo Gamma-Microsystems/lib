@@ -2,19 +2,20 @@
  * @brief Client-side Window Decoration library
  *
  * @copyright
- * This file is part of ToaruOS and is released under the terms
+ * This file is part of SiriusOS and is released under the terms
  * of the NCSA / University of Illinois License - see LICENSE.md
  * Copyright (C) 2012-2018 K. Lange
+ * Copyright (C) 2024 Gamma Microsystems
  */
 #include <stdint.h>
 #include <math.h>
 #include <dlfcn.h>
 
-#include <toaru/graphics.h>
-#include <toaru/yutani.h>
-#include <toaru/decorations.h>
-#include <toaru/menu.h>
-#include <toaru/text.h>
+#include <sirius/graphics.h>
+#include <sirius/yutani-ng.h>
+#include <sirius/decorations.h>
+#include <sirius/menu.h>
+#include <sirius/text.h>
 
 #define TEXT_OFFSET_X 10
 #define TEXT_OFFSET_Y 3
@@ -183,7 +184,7 @@ void init_decorations() {
 			options++;
 		}
 		char lib_name[100];
-		sprintf(lib_name, "libtoaru_decor-%s.so", theme);
+		sprintf(lib_name, "libsirius_decor-%s.so", theme);
 		void * theme_lib = dlopen(lib_name, 0);
 		if (!theme_lib) {
 			goto _theme_error;

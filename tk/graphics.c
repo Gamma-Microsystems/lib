@@ -1,10 +1,11 @@
 /**
- * @brief Generic Graphics library for ToaruOS
+ * @brief Generic Graphics library for SiriusOS
  *
  * @copyright
- * This file is part of ToaruOS and is released under the terms
+ * This file is part of SiriusOS and is released under the terms
  * of the NCSA / University of Illinois License - see LICENSE.md
  * Copyright (C) 2012-2021 K. Lange
+ * Copyright (C) 2024 Gamma Microsystems
  */
 #include <stdint.h>
 #include <string.h>
@@ -22,7 +23,7 @@
 
 #include <kernel/video.h>
 
-#include <toaru/graphics.h>
+#include <sirius/graphics.h>
 
 static inline int32_t min(int32_t a, int32_t b) {
 	return (a < b) ? a : b;
@@ -415,9 +416,9 @@ static int (*load_sprite_jpg)(sprite_t *, const char *) = NULL;
 static int (*load_sprite_png)(sprite_t *, const char *) = NULL;
 
 static void _load_format_libraries() {
-	void * _lib_jpeg = dlopen("libtoaru_jpeg.so", 0);
+	void * _lib_jpeg = dlopen("libsirius_jpeg.so", 0);
 	if (_lib_jpeg) load_sprite_jpg = dlsym(_lib_jpeg, "load_sprite_jpg");
-	void * _lib_png = dlopen("libtoaru_png.so", 0);
+	void * _lib_png = dlopen("libsirius_png.so", 0);
 	if (_lib_png) load_sprite_png = dlsym(_lib_png, "load_sprite_png");
 }
 
@@ -1295,4 +1296,3 @@ void draw_line_aa(gfx_context_t * ctx, int x_1, int x_2, int y_1, int y_2, uint3
 	struct gfx_point w = {(float)x_2, (float)y_2};
 	draw_line_aa_points(ctx,&v,&w,color,thickness);
 }
-

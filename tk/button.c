@@ -4,14 +4,15 @@
  * Really just a function to render a button...
  *
  * @copyright
- * This file is part of ToaruOS and is released under the terms
+ * This file is part of SiriusOS and is released under the terms
  * of the NCSA / University of Illinois License - see LICENSE.md
  * Copyright (C) 2018 K. Lange
+ * Copyright (C) 2024 Gamma Microsystems
  */
-#include <toaru/graphics.h>
-#include <toaru/button.h>
-#include <toaru/text.h>
-#include <toaru/icon_cache.h>
+#include <sirius/graphics.h>
+#include <sirius/button.h>
+#include <sirius/text.h>
+#include <sirius/icon_cache.h>
 
 static struct TT_Font * _tt_font_thin = NULL;
 
@@ -67,4 +68,3 @@ void ttk_button_draw(gfx_context_t * ctx, struct TTKButton * button) {
 	}
 
 }
-

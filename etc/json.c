@@ -2,18 +2,19 @@
  * @brief JSON parser.
  *
  * @copyright
- * This file is part of ToaruOS and is released under the terms
+ * This file is part of SiriusOS and is released under the terms
  * of the NCSA / University of Illinois License - see LICENSE.md
  * Copyright (C) 2018-2021 K. Lange
+ * Copyright (C) 2024 Gamma Microsystems
  */
 #include <stdio.h>
 #include <stdint.h>
 #include <ctype.h>
 #include <math.h>
 
-#include <toaru/hashmap.h>
-#include <toaru/list.h>
-#include <toaru/json.h>
+#include <sirius/hashmap.h>
+#include <sirius/list.h>
+#include <sirius/json.h>
 
 typedef struct JSON_Value Value;
 

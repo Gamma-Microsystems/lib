@@ -3,11 +3,11 @@
  */
 #include <time.h>
 #include <sys/time.h>
-#include <toaru/yutani.h>
-#include <toaru/graphics.h>
-#include <toaru/menu.h>
-#include <toaru/text.h>
-#include <toaru/panel.h>
+#include <sirius/yutani-ng.h>
+#include <sirius/graphics.h>
+#include <sirius/menu.h>
+#include <sirius/text.h>
+#include <sirius/panel.h>
 static struct MenuList * calmenu;
 static int date_widget_width = 48;
 #define CALENDAR_LINE_HEIGHT 22
@@ -209,4 +209,3 @@ struct PanelWidget * widget_init_date(void) {
 	list_insert(widgets_enabled, widget);
 	return widget;
 }
-

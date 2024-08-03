@@ -5,7 +5,7 @@
  * Used to provide menu bars and the applications menu.
  *
  * @copyright
- * This file is part of ToaruOS and is released under the terms
+ * This file is part of SiriusOS and is released under the terms
  * of the NCSA / University of Illinois License - see LICENSE.md
  * Copyright (C) 2018-2021 K. Lange
  */
@@ -16,15 +16,15 @@
 #include <sys/types.h>
 #include <dlfcn.h>
 
-#include <toaru/yutani.h>
-#include <toaru/graphics.h>
-#include <toaru/hashmap.h>
-#include <toaru/list.h>
-#include <toaru/icon_cache.h>
-#include <toaru/text.h>
-#include <toaru/markup_text.h>
+#include <sirius/yutani-ng.h>
+#include <sirius/graphics.h>
+#include <sirius/hashmap.h>
+#include <sirius/list.h>
+#include <sirius/icon_cache.h>
+#include <sirius/text.h>
+#include <sirius/markup_text.h>
 
-#include <toaru/menu.h>
+#include <sirius/menu.h>
 
 #define MENU_ENTRY_HEIGHT 20
 #define MENU_BACKGROUND rgb(239,238,232)

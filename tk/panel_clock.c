@@ -4,11 +4,11 @@
 #include <time.h>
 #include <math.h>
 #include <sys/time.h>
-#include <toaru/yutani.h>
-#include <toaru/graphics.h>
-#include <toaru/menu.h>
-#include <toaru/text.h>
-#include <toaru/panel.h>
+#include <sirius/yutani-ng.h>
+#include <sirius/graphics.h>
+#include <sirius/menu.h>
+#include <sirius/text.h>
+#include <sirius/panel.h>
 static struct MenuList * clockmenu;
 
 static void watch_draw_line(gfx_context_t * ctx, int offset, double r, double ir, double a, double b, uint32_t color, float thickness) {

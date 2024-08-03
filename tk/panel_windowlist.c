@@ -1,12 +1,12 @@
 /**
  * @brief Panel window list widget
  */
-#include <toaru/yutani.h>
-#include <toaru/graphics.h>
-#include <toaru/menu.h>
-#include <toaru/text.h>
-#include <toaru/panel.h>
-#include <toaru/icon_cache.h>
+#include <sirius/yutani-ng.h>
+#include <sirius/graphics.h>
+#include <sirius/menu.h>
+#include <sirius/text.h>
+#include <sirius/panel.h>
+#include <sirius/icon_cache.h>
 
 #define GRADIENT_HEIGHT 24
 #define GRADIENT_AT(y) premultiply(rgba(72, 167, 255, ((24-(y))*160)/24))
@@ -244,4 +244,3 @@ struct PanelWidget * widget_init_windowlist(void) {
 	list_insert(widgets_enabled, widget);
 	return widget;
 }
-

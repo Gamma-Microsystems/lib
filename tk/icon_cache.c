@@ -5,7 +5,7 @@
  * Probably needs scaling?
  *
  * @copyright
- * This file is part of ToaruOS and is released under the terms
+ * This file is part of SiriusOS and is released under the terms
  * of the NCSA / University of Illinois License - see LICENSE.md
  * Copyright (C) 2018 K. Lange
  */
@@ -14,8 +14,8 @@
 #include <fcntl.h>
 #include <unistd.h>
 
-#include <toaru/graphics.h>
-#include <toaru/hashmap.h>
+#include <sirius/graphics.h>
+#include <sirius/hashmap.h>
 
 static hashmap_t * icon_cache_16;
 static hashmap_t * icon_cache_48;

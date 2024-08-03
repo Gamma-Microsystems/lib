@@ -8,11 +8,11 @@
 #include <sys/ioctl.h>
 #include <kernel/mod/sound.h>
 
-#include <toaru/yutani.h>
-#include <toaru/graphics.h>
-#include <toaru/menu.h>
-#include <toaru/text.h>
-#include <toaru/panel.h>
+#include <sirius/yutani-ng.h>
+#include <sirius/graphics.h>
+#include <sirius/menu.h>
+#include <sirius/text.h>
+#include <sirius/panel.h>
 
 #define VOLUME_DEVICE_ID 0
 #define VOLUME_KNOB_ID   0
@@ -232,4 +232,3 @@ struct PanelWidget * widget_init_volume(void) {
 	list_insert(widgets_enabled, widget);
 	return widget;
 }
-

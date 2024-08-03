@@ -4,25 +4,26 @@
  * Client library for the compositing window system.
  *
  * @copyright
- * This file is part of ToaruOS and is released under the terms
+ * This file is part of SiriusOS and is released under the terms
  * of the NCSA / University of Illinois License - see LICENSE.md
  * Copyright (C) 2014-2018 K. Lange
+ * Copyright (C) 2024 Gamma Microsystems
  */
 #include <string.h>
 #include <stdlib.h>
 #include <sys/shm.h>
 
-#include <toaru/pex.h>
-#include <toaru/graphics.h>
-#include <toaru/kbd.h>
-#include <toaru/hashmap.h>
-#include <toaru/list.h>
-#include <toaru/yutani.h>
-#include <toaru/yutani-internal.h>
-#include <toaru/mouse.h>
+#include <sirius/pex.h>
+#include <sirius/graphics.h>
+#include <sirius/kbd.h>
+#include <sirius/hashmap.h>
+#include <sirius/list.h>
+#include <sirius/yutani-ng.h>
+#include <sirius/yutani-internal.h>
+#include <sirius/mouse.h>
 
 /* We need the flags but don't want the library dep (maybe the flags should be here?) */
-#include <toaru/./decorations.h>
+#include <sirius/./decorations.h>
 
 /**
  * yutani_wait_for

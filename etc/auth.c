@@ -2,9 +2,10 @@
  * @brief Authentication routines.
  *
  * @copyright
- * This file is part of ToaruOS and is released under the terms
+ * This file is part of SiriusOS and is released under the terms
  * of the NCSA / University of Illinois License - see LICENSE.md
  * Copyright (C) 2013-2018 K. Lange
+ * Copyright (C) 2024 Gamma Microsystems
  */
 #include <stdlib.h>
 #include <stdio.h>
@@ -20,7 +21,7 @@ extern int setgroups(int size, const gid_t list[]);
 
 #define MASTER_PASSWD "/etc/master.passwd"
 
-int toaru_auth_check_pass(char * user, char * pass) {
+int sirius_auth_check_pass(char * user, char * pass) {
 
 	/* XXX DO something useful */
 
@@ -41,7 +42,7 @@ int toaru_auth_check_pass(char * user, char * pass) {
 
 }
 
-void toaru_auth_set_vars(void) {
+void sirius_auth_set_vars(void) {
 	int uid = getuid();
 
 	struct passwd * p = getpwuid(uid);
@@ -64,7 +65,7 @@ void toaru_auth_set_vars(void) {
 	chdir(getenv("HOME"));
 }
 
-void toaru_auth_set_groups(uid_t uid) {
+void sirius_auth_set_groups(uid_t uid) {
 	/* Get the username for this uid */
 	struct passwd * pwd = getpwuid(uid);
 
@@ -129,9 +130,9 @@ no_groups:
 	setgroups(0, NULL);
 }
 
-void toaru_set_credentials(uid_t uid) {
-	toaru_auth_set_groups(uid);
+void sirius_set_credentials(uid_t uid) {
+	sirius_auth_set_groups(uid);
 	setgid(uid);
 	setuid(uid);
-	toaru_auth_set_vars();
+	sirius_auth_set_vars();
 }

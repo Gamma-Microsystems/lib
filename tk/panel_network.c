@@ -10,11 +10,11 @@
 #include <net/if.h>
 #include <arpa/inet.h>
 
-#include <toaru/yutani.h>
-#include <toaru/graphics.h>
-#include <toaru/menu.h>
-#include <toaru/text.h>
-#include <toaru/panel.h>
+#include <sirius/yutani-ng.h>
+#include <sirius/graphics.h>
+#include <sirius/menu.h>
+#include <sirius/text.h>
+#include <sirius/panel.h>
 static int netstat_count = 0;
 static int netstat_prev[32] = {0};
 static char netstat_data[32][1024];
@@ -164,4 +164,3 @@ struct PanelWidget * widget_init_network(void) {
 	list_insert(widgets_enabled, widget);
 	return widget;
 }
-

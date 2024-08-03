@@ -1,5 +1,5 @@
 /**
- * @brief Toaru Text library - TrueType parser.
+ * @brief Sirius Text library - TrueType parser.
  * @file lib/text.c
  * @author K. Lange <klange@toaruos.org>
  *
@@ -7,9 +7,10 @@
  * glyph rendering.
  *
  * @copyright
- * This file is part of ToaruOS and is released under the terms
+ * This file is part of SiriusOS and is released under the terms
  * of the NCSA / University of Illinois License - see LICENSE.md
  * Copyright (C) 2021 K. Lange
+ * Copyright (C) 2024 Gamma Microsystems
  */
 #include <stdio.h>
 #include <stdint.h>
@@ -20,12 +21,12 @@
 
 #include <math.h>
 
-#include <toaru/graphics.h>
-#include <toaru/hashmap.h>
-#include <toaru/decodeutf8.h>
-#include <toaru/spinlock.h>
+#include <sirius/graphics.h>
+#include <sirius/hashmap.h>
+#include <sirius/decodeutf8.h>
+#include <sirius/spinlock.h>
 
-#include "toaru/text.h"
+#include "sirius/text.h"
 
 #undef min
 #define min(a,b) ((a) < (b) ? (a) : (b))

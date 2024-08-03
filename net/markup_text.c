@@ -2,17 +2,18 @@
  * @brief Marked up text label renderer.
  *
  * @copyright
- * This file is part of ToaruOS and is released under the terms
+ * This file is part of SiriusOS and is released under the terms
  * of the NCSA / University of Illinois License - see LICENSE.md
  * Copyright (C) 2021 K. Lange
+ * Copyright (C) 2024 Gamma Microsystems
  */
 #include <math.h>
-#include <toaru/markup.h>
-#include <toaru/list.h>
-#include <toaru/graphics.h>
-#include <toaru/text.h>
-#include <toaru/decodeutf8.h>
-#include "toaru/markup_text.h"
+#include <sirius/markup.h>
+#include <sirius/list.h>
+#include <sirius/graphics.h>
+#include <sirius/text.h>
+#include <sirius/decodeutf8.h>
+#include "sirius/markup_text.h"
 
 static struct TT_Font * dejaVuSans = NULL;
 static struct TT_Font * dejaVuSans_Bold = NULL;
@@ -308,4 +309,3 @@ void markup_text_init(void) {
 		dejaVuSansMono_BoldOblique = tt_font_from_shm("monospace.bolditalic");
 	}
 }
-

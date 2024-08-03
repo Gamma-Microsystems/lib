@@ -2,9 +2,10 @@
  * @brief Terrible little ANSI escape parser.
  *
  * @copyright
- * This file is part of ToaruOS and is released under the terms
+ * This file is part of SiriusOS and is released under the terms
  * of the NCSA / University of Illinois License - see LICENSE.md
  * Copyright (C) 2014-2018 K. Lange
+ * Copyright (C) 2024 Gamma Microsystems
  */
 #include <stdlib.h>
 
@@ -12,10 +13,10 @@
 #include <string.h>
 #include <stdio.h>
 
-#include <toaru/graphics.h>
-#include <toaru/termemu.h>
+#include <sirius/graphics.h>
+#include <sirius/termemu.h>
 
-#include <toaru/spinlock.h>
+#include <sirius/spinlock.h>
 
 #define MAX_ARGS 1024
 

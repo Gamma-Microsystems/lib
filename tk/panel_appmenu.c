@@ -1,13 +1,13 @@
 /**
  * @brief Panel "Applications" menu widget
  */
-#include <toaru/yutani.h>
-#include <toaru/yutani-internal.h>
-#include <toaru/graphics.h>
-#include <toaru/hashmap.h>
-#include <toaru/menu.h>
-#include <toaru/text.h>
-#include <toaru/panel.h>
+#include <sirius/yutani.h>
+#include <sirius/yutani-internal.h>
+#include <sirius/graphics.h>
+#include <sirius/hashmap.h>
+#include <sirius/menu.h>
+#include <sirius/text.h>
+#include <sirius/panel.h>
 
 static struct MenuList * appmenu;
 
@@ -52,4 +52,3 @@ struct PanelWidget * widget_init_appmenu(void) {
 	list_insert(widgets_enabled, widget);
 	return widget;
 }
-

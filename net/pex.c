@@ -5,9 +5,10 @@
  * functionality provided by the packetfs kernel interface.
  *
  * @copyright
- * This file is part of ToaruOS and is released under the terms
+ * This file is part of SiriusOS and is released under the terms
  * of the NCSA / University of Illinois License - see LICENSE.md
  * Copyright (C) 2014-2018 K. Lange
+ * Copyright (C) 2024 Gamma Microsystems
  */
 #include <alloca.h>
 #include <assert.h>
@@ -19,7 +20,7 @@
 #include <fcntl.h>
 #include <sys/ioctl.h>
 
-#include <toaru/pex.h>
+#include <sirius/pex.h>
 
 size_t pex_send(FILE * sock, uintptr_t rcpt, size_t size, char * blob) {
 	assert(size <= MAX_PACKET_SIZE);

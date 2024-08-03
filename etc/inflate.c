@@ -1,16 +1,17 @@
 /**
- * @brief libtoaru_inflate: Methods for decompressing DEFLATE and gzip payloads.
+ * @brief libsirius_inflate: Methods for decompressing DEFLATE and gzip payloads.
  *
  * @copyright
- * This file is part of ToaruOS and is released under the terms
+ * This file is part of SiriusOS and is released under the terms
  * of the NCSA / University of Illinois License - see LICENSE.md
  * Copyright (C) 2020 K. Lange
+ * Copyright (C) 2024 Gamma Microsystems
  */
 #include <stdint.h>
 #include <stddef.h>
 
 #ifndef _BOOT_LOADER
-#include <toaru/inflate.h>
+#include <sirius/inflate.h>
 #endif
 
 /**
