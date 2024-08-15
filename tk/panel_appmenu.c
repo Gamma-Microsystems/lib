@@ -1,7 +1,7 @@
 /**
  * @brief Panel "Applications" menu widget
  */
-#include <sirius/yutani.h>
+#include <sirius/yutani-ng.h>
 #include <sirius/yutani-internal.h>
 #include <sirius/graphics.h>
 #include <sirius/hashmap.h>
